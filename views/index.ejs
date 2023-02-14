@@ -1,141 +1,163 @@
 <%- include('./partials/head') %>
 
   <header>
-    <img src="https://minotar.net/helm/Oom_Dagobert/600.png" alt="Steve Skin" />
-    <h1>
-      <%= member.name %>
-        <%= member.surname %>
-    </h1>
-    <h2><b>USER</b>
-      <%= member.id %>
-    </h2>
-    <ul>
-      <li>Microsoft</li>
-      <li>Netherlands</li>
-    </ul>
-    <!-- <p><b>About me</b> <br>
-      <%= member.bio.html %>
-    </p> -->
+    <div class="header-img">
+      <img src="https://avatars.githubusercontent.com/u/16403403?s=80&v=4" alt="Steve Avatar" />
+    </div>
+    <div class="header-info-1">
+      <h1>
+        <%= member.name %>
+          <%= member.surname %>
+      </h1>
+      <h2><b>USER</b> <%= member.id %>
+      </h2>
+      <ul>
+        <li>Windows</li>
+        <li>
+          <%= member.slug %>
+        </li>
+      </ul>
+      <p><b>About me</b> <br>
+        <%= member.bio.html %>
+      </p>
+    </div>
+    <div class="header-info-2">
+    </div>
   </header>
 
   <main>
+
     <div class="squad-title">
       <h2>Squad A</h2>
     </div>
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://minotar.net/helm/Oom_Dagobert/600.png" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>
-            <%= member.nickname %>
-          </h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
-      </div>
-    </section>
+    <div class="container">
+      <div class="user-row-1">
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>Steve</h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
-      </div>
-    </section>
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://avatars.githubusercontent.com/u/16403403?s=80&v=4" alt="Steve Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>
+                <%= member.name %>
+              </h2>
+              <p>
+                <%= member.role %>
+              </p>
+            </div>
+          </div>
+        </section>
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://i.pinimg.com/originals/a9/a4/ec/a9a4ec03fa9afc407028ca40c20ed774.jpg" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>Alex</h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
-      </div>
-    </section>
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://i.stack.imgur.com/frlIf.png" alt="Steve Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>Steve</h2>
+              <p>
+                <%= member.role %>
+              </p>
+            </div>
+          </div>
+        </section>
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>Steve</h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
-      </div>
-    </section>
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://avatars.githubusercontent.com/u/7940844?s=80&v=4" alt="Alex Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>Alex</h2>
+              <p>
+                <%= member.role %>
+              </p>
+            </div>
+          </div>
+        </section>
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://i.pinimg.com/originals/a9/a4/ec/a9a4ec03fa9afc407028ca40c20ed774.jpg" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>Alex</h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
       </div>
-    </section>
+      <div class="user-row-2">
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://i.pinimg.com/originals/a9/a4/ec/a9a4ec03fa9afc407028ca40c20ed774.jpg" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>Alex</h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
-      </div>
-    </section>
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://avatars.githubusercontent.com/u/75864?v=4" alt="Steve Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>Steve</h2>
+              <p>
+                <%= member.role %>
+              </p>
+            </div>
+          </div>
+        </section>
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>Steve</h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="id-card">
-        <div class="avatar-wrap float-left">
-          <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png" alt="Steve Skin" />
-        </div>
-        <div class="id-card-information float-left">
-          <h2>Steve</h2>
-          <p>
-            <%= member.role %>
-          </p>
-        </div>
+
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://avatars.githubusercontent.com/u/24235581?v=4" alt="Alex Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>Alex</h2>
+              <p>
+                <%= member.role %>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://avatars.githubusercontent.com/u/5435082?s=80&v=4" alt="Alex Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>Alex</h2>
+              <p>
+                <%= member.role %>
+              </p>
+            </div>
+          </div>
+        </section>
+
       </div>
-    </section>
+      <div class="user-row-3">
+
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://avatars.githubusercontent.com/u/1309537?v=4" alt="Notch Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>Notch</h2>
+              <p>
+                TEACHER
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <img src="https://avatars.githubusercontent.com/u/109185012?s=64&v=4" alt="Steve Avatar" />
+            </div>
+            <div class="id-card-information float-left">
+              <h2>Steve</h2>
+              <p>
+                <%= member.role %>
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
 
   </main>
 
