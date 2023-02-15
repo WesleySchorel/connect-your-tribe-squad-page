@@ -92,6 +92,8 @@ header li {
   padding: 1rem;
 }
 
+/* ----------------------------------------- */
+
 main .squad-title {
   color: white;
   padding: 1rem;
@@ -103,11 +105,12 @@ main section{
 }
 
 main h2 { 
+  font-size: 1.2rem;
   margin-top: 5px;
   color: white;
 }
 
-main p { 
+article p { 
   margin-top: 0;
   font-weight: 600;
   color: rgb(0, 168, 219);
@@ -130,13 +133,33 @@ main p {
 }
 
 .id-card img { 
+  max-height: 75px; 
   max-width: 75px; 
+  background-color: #ffffff;
   }
 
 .id-card-information {
   width: 65%;
-  padding-left: 30px;
+  padding-left: 12px;
   padding-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* main section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+} */
+
+article {
+  position: relative;
+  background-color: #282828;
+  height: 75px;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 769px) {
@@ -201,32 +224,8 @@ main p {
   .header-info-2 { 
     grid-area: header-info-2; 
   }
-  
-  
-  
 
-  .id-card {
-    max-width: 100%;
+  article {
+    max-width: 50%;
   }
-
-
-  .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "user-row-1 user-row-2 user-row-3";
-  }
-  
-  .user-row-1 { grid-area: user-row-1; }
-  
-  .user-row-2 { grid-area: user-row-2; }
-  
-  .user-row-3 { grid-area: user-row-3; }
-  
-  
 }
-
-

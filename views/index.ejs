@@ -2,24 +2,22 @@
 
   <header>
     <div class="header-img">
-      <img src="https://avatars.githubusercontent.com/u/16403403?s=80&v=4" alt="Steve Avatar" />
+      <img src="https://avatars.githubusercontent.com/u/62932179?s=280&v=4h" alt="Steve Avatar" />
     </div>
     <div class="header-info-1">
       <h1>
-        <%= member.name %>
-          <%= member.surname %>
+        <%= squad.name %>
       </h1>
-      <h2><b>USER</b> <%= member.id %>
+      <h2><b>ID <%= squad.id %></b>
       </h2>
       <ul>
-        <li>Windows</li>
         <li>
-          <%= member.slug %>
+          Slug: <%= squad.slug %>
+        </li>
+        <li>
+          Since: <%= squad.cohort %>
         </li>
       </ul>
-      <p><b>About me</b> <br>
-        <%= member.bio.html %>
-      </p>
     </div>
     <div class="header-info-2">
     </div>
@@ -28,136 +26,41 @@
   <main>
 
     <div class="squad-title">
-      <h2>Squad A</h2>
+      <h2>
+        <%= squad.name %>
+      </h2>
     </div>
 
-    <div class="container">
-      <div class="user-row-1">
-
-        <section>
+    <section>
+      <!-- Hier komen de members -->
+      <% squad.members.forEach(member=> { %>
+        <article>
           <div class="id-card">
             <div class="avatar-wrap float-left">
-              <img src="https://avatars.githubusercontent.com/u/16403403?s=80&v=4" alt="Steve Avatar" />
+          <% if (member.avatar) { %>
+            
+            <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>"
+              onerror="this.onerror=null;this.src='https://i.pinimg.com/originals/a9/a4/ec/a9a4ec03fa9afc407028ca40c20ed774.jpg';" />
+            <% }else{ %>
+              <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png"
+                alt="Placeholder avatar" />
+              <% } %>
             </div>
-            <div class="id-card-information float-left">
+              <div class="id-card-information float-left">
               <h2>
-                <%= member.name %>
-              </h2>
-              <p>
-                <%= member.role %>
-              </p>
+                  <%= member.name %>
+                </h2>
+                <% if(member.gitHubHandle) { %>
+                  <p><%= member.gitHubHandle %></p>
+              <% } else { %>
+                  <p>Geen ingevuld</p>
+              <% } %>
+              </div>  
             </div>
-          </div>
-        </section>
+        </article>
+        <% }) %>
+    </section>
 
-        <section>
-          <div class="id-card">
-            <div class="avatar-wrap float-left">
-              <img src="https://i.stack.imgur.com/frlIf.png" alt="Steve Avatar" />
-            </div>
-            <div class="id-card-information float-left">
-              <h2>Steve</h2>
-              <p>
-                <%= member.role %>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="id-card">
-            <div class="avatar-wrap float-left">
-              <img src="https://avatars.githubusercontent.com/u/7940844?s=80&v=4" alt="Alex Avatar" />
-            </div>
-            <div class="id-card-information float-left">
-              <h2>Alex</h2>
-              <p>
-                <%= member.role %>
-              </p>
-            </div>
-          </div>
-        </section>
-
-      </div>
-      <div class="user-row-2">
-
-        <section>
-          <div class="id-card">
-            <div class="avatar-wrap float-left">
-              <img src="https://avatars.githubusercontent.com/u/75864?v=4" alt="Steve Avatar" />
-            </div>
-            <div class="id-card-information float-left">
-              <h2>Steve</h2>
-              <p>
-                <%= member.role %>
-              </p>
-            </div>
-          </div>
-        </section>
-
-
-
-        <section>
-          <div class="id-card">
-            <div class="avatar-wrap float-left">
-              <img src="https://avatars.githubusercontent.com/u/24235581?v=4" alt="Alex Avatar" />
-            </div>
-            <div class="id-card-information float-left">
-              <h2>Alex</h2>
-              <p>
-                <%= member.role %>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="id-card">
-            <div class="avatar-wrap float-left">
-              <img src="https://avatars.githubusercontent.com/u/5435082?s=80&v=4" alt="Alex Avatar" />
-            </div>
-            <div class="id-card-information float-left">
-              <h2>Alex</h2>
-              <p>
-                <%= member.role %>
-              </p>
-            </div>
-          </div>
-        </section>
-
-      </div>
-      <div class="user-row-3">
-
-        <section>
-          <div class="id-card">
-            <div class="avatar-wrap float-left">
-              <img src="https://avatars.githubusercontent.com/u/1309537?v=4" alt="Notch Avatar" />
-            </div>
-            <div class="id-card-information float-left">
-              <h2>Notch</h2>
-              <p>
-                TEACHER
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="id-card">
-            <div class="avatar-wrap float-left">
-              <img src="https://avatars.githubusercontent.com/u/109185012?s=64&v=4" alt="Steve Avatar" />
-            </div>
-            <div class="id-card-information float-left">
-              <h2>Steve</h2>
-              <p>
-                <%= member.role %>
-              </p>
-            </div>
-          </div>
-        </section>
-
-      </div>
-    </div>
 
   </main>
 
