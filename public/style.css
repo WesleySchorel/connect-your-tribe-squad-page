@@ -146,6 +146,10 @@ article p {
   margin-bottom: 5px;
 }
 
+.id-card-information span {
+  color: red;
+}
+
 /* main section {
   display: flex;
   flex-flow: row wrap;

@@ -15,7 +15,7 @@
           Slug: <%= squad.slug %>
         </li>
         <li>
-          Since: <%= squad.cohort %>
+          Cohort: <%= squad.cohort %>
         </li>
       </ul>
     </div>
@@ -27,7 +27,7 @@
 
     <div class="squad-title">
       <h2>
-        <%= squad.name %>
+        Overzicht: <%= squad.name %>
       </h2>
     </div>
 
@@ -53,7 +53,7 @@
                 <% if(member.gitHubHandle) { %>
                   <p><%= member.gitHubHandle %></p>
               <% } else { %>
-                  <p>Geen ingevuld</p>
+                  <p><span>Niet Ingesteld</span></p>
               <% } %>
               </div>  
             </div>
