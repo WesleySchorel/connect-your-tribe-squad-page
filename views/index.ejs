@@ -1,7 +1,7 @@
 <%- include('./partials/head') %>
 
   <header>
-      <img src="https://avatars.githubusercontent.com/u/62932179?s=280&v=4h" alt="Steve Avatar" />
+      <img src="https://avatars.githubusercontent.com/u/62932179?s=280&v=4h" alt="Logo van de FDND opleiding." />
     <div class="header-info-1">
       <h1>
         <%= squad.name %>
@@ -23,8 +23,14 @@
 
     <div class="squad-title">
       <h2>
-        Overzicht: <%= squad.name %>
+        Overzicht: <%= squad.name %> 
       </h2>
+      <!-- <form>
+        <select>
+          <option value="naam">Naam</option>
+          <option value="github">Github</option>
+        </select>
+      </form> -->
     </div>
 
     <section>
@@ -37,7 +43,7 @@
           <% if (member.avatar) { %>
             
             <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>"
-              onerror="this.onerror=null;this.src='https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png';" />
+              onerror="this.onerror=null;this.src='https://minotar.net/helm/tjbs/600.png';" />
             <% }else{ %>
               <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png"
                 alt="Placeholder avatar" />
