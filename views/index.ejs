@@ -1,9 +1,7 @@
 <%- include('./partials/head') %>
 
   <header>
-    <div class="header-img">
       <img src="https://avatars.githubusercontent.com/u/62932179?s=280&v=4h" alt="Steve Avatar" />
-    </div>
     <div class="header-info-1">
       <h1>
         <%= squad.name %>
@@ -19,8 +17,6 @@
         </li>
       </ul>
     </div>
-    <div class="header-info-2">
-    </div>
   </header>
 
   <main>
@@ -35,19 +31,20 @@
       <!-- Hier komen de members -->
       <% squad.members.forEach(member=> { %>
         <article>
+          <a href="<%= "https://github.com/" + member.gitHubHandle %>" target="_blank">
           <div class="id-card">
             <div class="avatar-wrap float-left">
           <% if (member.avatar) { %>
             
             <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>"
-              onerror="this.onerror=null;this.src='https://i.pinimg.com/originals/a9/a4/ec/a9a4ec03fa9afc407028ca40c20ed774.jpg';" />
+              onerror="this.onerror=null;this.src='https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png';" />
             <% }else{ %>
               <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png"
                 alt="Placeholder avatar" />
               <% } %>
             </div>
               <div class="id-card-information float-left">
-              <h2>
+              <h2 class="<%= member.name %>">
                   <%= member.name %>
                 </h2>
                 <% if(member.gitHubHandle) { %>
@@ -59,6 +56,7 @@
             </div>
         </article>
         <% }) %>
+      </a>
     </section>
 
 
