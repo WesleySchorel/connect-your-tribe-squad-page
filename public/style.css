@@ -166,6 +166,10 @@ article {
   margin-bottom: 1rem;
 }
 
+.teacher {
+  color: red;
+}
+
 @media (min-width: 769px) {
   header img {
     display: none;

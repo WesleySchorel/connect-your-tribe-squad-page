@@ -1,5 +1,7 @@
+// importeert de Express module uit de "express" map.
 import express from 'express'
 
+// Variabele met de url van de json data
 const url = 'https://whois.fdnd.nl/api/v1/squad/'
 
 // Maak een nieuwe express app
