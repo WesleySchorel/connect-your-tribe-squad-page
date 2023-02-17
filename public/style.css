@@ -133,9 +133,11 @@ article p {
 }
 
 .id-card img { 
+  min-width: 75px;
   max-height: 75px; 
-  max-width: 75px; 
+  width: 100%;
   background-color: #ffffff;
+  object-fit: cover;
   }
 
 .id-card-information {
@@ -177,7 +179,7 @@ article {
 
   header h1 {
     margin-top: -25px;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 600;
     padding: 1rem;
     color: white;
