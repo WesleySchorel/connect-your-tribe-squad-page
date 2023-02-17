@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-  color: aquamarine;
+  color: #c8c8c8;
 }
 
 nav .container {
@@ -51,7 +51,13 @@ nav ul li {
 header {
   background-color: #000000;
   color: #fff;
-  min-height: 200px;
+  min-height: 200px; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.879), rgba(0, 0, 0, 0.879)), url("https://www.hva.nl/site/binaries/content/gallery/shared/opleidingen/fdmci/landscape-images/fdnd/open-dag-fdnd.jpg/open-dag-fdnd.jpg/hvacontentservice%3AsixteenByNineLarge");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 header img {
@@ -114,7 +120,6 @@ article p {
   margin-top: 0;
   font-weight: 600;
   color: rgb(0, 168, 219);
-  text-transform: uppercase;
   letter-spacing: .2em;
   font-size: 1rem;
 }
@@ -178,7 +183,7 @@ article {
   }
 
   header h1 {
-    margin-top: -25px;
+    margin-top: -50px;
     font-size: 9rem;
     font-weight: 600;
     padding: 1rem;
