@@ -230,3 +230,16 @@ article {
     align-items: center;
   }
 }
+
+
+
+
+dialog {
+  padding: 1rem;
+  margin: auto;
+}
+
+dialog::backdrop {
+  background: #0000003a;
+  backdrop-filter: blur(5px);
+}

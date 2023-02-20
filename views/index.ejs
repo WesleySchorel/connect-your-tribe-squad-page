@@ -29,40 +29,44 @@
     <section>
       <!-- Hier komen de members -->
       <% squad.members.forEach(member=> { %>
-        <article>
-          <a href="<%= " https://github.com/" + member.gitHubHandle %>" target="_blank">
-            <div class="id-card">
-              <div class="avatar-wrap float-left">
-                <% if (member.avatar) { %>
+        <article data-id="<%= member.id %>" class="id-card-trigger">
+          <!-- <a href="<%= " https://github.com/" + member.gitHubHandle %>" target="_blank"> -->
+          <div class="id-card">
+            <div class="avatar-wrap float-left">
+              <% if (member.avatar) { %>
 
-                  <!-- De avatar van een member wordt opgehaald uit de API. Als de avatar niet laad of als er sprake is van
+                <!-- De avatar van een member wordt opgehaald uit de API. Als de avatar niet laad of als er sprake is van
                   een error bij een avatar uit de database wordt er gekeken naar een placeh9lder image en wordt deze
                   gebruikt. -->
-                  <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>"
-                    onerror="this.onerror=null;this.src='https://minotar.net/helm/tjbs/600.png';" />
-                  <% }else{ %>
-                    <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png"
-                      alt="Placeholder avatar" />
-                    <% } %>
-              </div>
-              <div class="id-card-information float-left">
-                <h2>
-                  <!-- Haalt de github handle van een member uit de API op. Mocht een member zijn of haar githubhandle niet
-                  hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
-                  <%= member.name %>
-                </h2>
-                <% if(member.gitHubHandle) { %>
-                  <p>
-                    <%= member.gitHubHandle %>
-                  </p>
-                  <% } else { %>
-                    <p><span>Niet Ingesteld</span></p>
-                    <% } %>
-              </div>
+                <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>"
+                  onerror="this.onerror=null;this.src='https://minotar.net/helm/tjbs/600.png';" />
+                <% }else{ %>
+                  <img src="https://i.pinimg.com/originals/85/78/bf/8578bfd439ef6ee41e103ae82b561986.png"
+                    alt="Placeholder avatar" />
+                  <% } %>
             </div>
+            <div class="id-card-information float-left">
+              <h2>
+                <!-- Haalt de github handle van een member uit de API op. Mocht een member zijn of haar githubhandle niet
+                  hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
+                <%= member.name %>
+              </h2>
+              <% if(member.gitHubHandle) { %>
+                <p>
+                  <%= member.gitHubHandle %>
+                </p>
+                <% } else { %>
+                  <p><span>Niet Ingesteld</span></p>
+                  <% } %>
+            </div>
+          </div>
         </article>
+        <!-- Dialog waarin alle gegevens van een bepaalde member worden weergegeven. -->
+        <dialog class="card" id="<%= member.id %>">
+          <%= member.name %>
+        </dialog>
         <% }) %>
-          </a>
+          <!-- </a> -->
     </section>
 
 
