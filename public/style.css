@@ -51,7 +51,7 @@ nav ul li {
 header {
   background-color: #000000;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.824), rgba(0, 0, 0, 0.824)), url("https://www.hva.nl/site/binaries/content/gallery/shared/opleidingen/fdmci/landscape-images/fdnd/open-dag-fdnd.jpg/open-dag-fdnd.jpg/hvacontentservice%3AsixteenByNineLarge");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.770), rgba(0, 0, 0, 0.770)), url("https://www.hva.nl/site/binaries/content/gallery/shared/opleidingen/fdmci/landscape-images/fdnd/open-dag-fdnd.jpg/open-dag-fdnd.jpg/hvacontentservice%3AsixteenByNineLarge");
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,10 +163,6 @@ article {
   margin-bottom: 1rem;
 }
 
-.teacher {
-  color: red;
-}
-
 .top {
   display: none;
 }
@@ -220,13 +216,6 @@ article {
     width: 1040px; 
     padding: 50px;
   }
-
-  /* main section {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-  } */
 
   .top{
     width: 70px;
