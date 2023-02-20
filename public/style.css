@@ -97,8 +97,6 @@ header li {
   padding: 1rem;
 }
 
-/* ----------------------------------------- */
-
 main .squad-title {
   color: white;
   padding: 1rem;
@@ -156,13 +154,6 @@ article p {
   color: red;
 }
 
-/* main section {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1rem;
-  justify-content: space-evenly;
-} */
-
 article {
   position: relative;
   background-color: #282828;
@@ -174,6 +165,10 @@ article {
 
 .teacher {
   color: red;
+}
+
+.top {
+  display: none;
 }
 
 @media (min-width: 769px) {
@@ -224,5 +219,25 @@ article {
     margin: auto;
     width: 1040px; 
     padding: 50px;
+  }
+
+  /* main section {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+  } */
+
+  .top{
+    width: 70px;
+    height: 70px;
+    background: #444444;
+    border-radius: 50%;
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
