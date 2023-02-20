@@ -237,9 +237,35 @@ article {
 dialog {
   padding: 1rem;
   margin: auto;
+  width: 100%;
+  height: 50%;
+  background-color: #282828;
+  border-radius: 5px;
+  border-color: #007acc;
 }
 
 dialog::backdrop {
   background: #0000003a;
   backdrop-filter: blur(5px);
+}
+
+dialog h2 { 
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: white;
+}
+
+dialog p { 
+  margin-top: 0;
+  font-weight: 600;
+  color: rgb(0, 168, 219);
+  letter-spacing: .2em;
+  font-size: 1rem;
+}
+
+dialog a {
+  margin-top: 5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }

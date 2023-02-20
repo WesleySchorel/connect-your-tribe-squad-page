@@ -51,19 +51,22 @@
                   hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
                 <%= member.name %>
               </h2>
-              <% if(member.gitHubHandle) { %>
-                <p>
-                  <%= member.gitHubHandle %>
-                </p>
-                <% } else { %>
-                  <p><span>Niet Ingesteld</span></p>
-                  <% } %>
+              <p><%= member.role %></p>
             </div>
           </div>
         </article>
         <!-- Dialog waarin alle gegevens van een bepaalde member worden weergegeven. -->
         <dialog class="card" id="<%= member.id %>">
-          <%= member.name %>
+          <h2><%= member.name %></h2>
+          <% if(member.gitHubHandle) { %>
+            <p>
+              <%= member.gitHubHandle %>
+            </p>
+            <% } else { %>
+              <p><span>Niet Ingesteld</span></p>
+              <% } %>
+            <p><%= member.role %></p>
+            <a href="<%= " /?squad=" + squad.slug %> %>">Close Menu</a>
         </dialog>
         <% }) %>
           <!-- </a> -->
