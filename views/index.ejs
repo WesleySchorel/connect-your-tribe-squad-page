@@ -24,12 +24,6 @@
       <h2>
         Overzicht: <%= squad.name %>
       </h2>
-      <!-- <form>
-        <select>
-          <option value="naam">Naam</option>
-          <option value="github">Github</option>
-        </select>
-      </form> -->
     </div>
 
     <section>
@@ -52,7 +46,7 @@
                     <% } %>
               </div>
               <div class="id-card-information float-left">
-                <h2 class="<%= member.role %>">
+                <h2>
                   <!-- Haalt de github handle van een member uit de API op. Mocht een member zijn of haar githubhandle niet
                   hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
                   <%= member.name %>
