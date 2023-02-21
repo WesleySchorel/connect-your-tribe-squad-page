@@ -76,7 +76,6 @@
             <div class="id-card-information float-left">
               <h2>
                 <%= member.name %>
-                  <%= member.surname %>
               </h2>
               <p>
                 <%= member.role %>
@@ -87,22 +86,37 @@
           <div class="dialog-card">
             <p>About me:</p>
             <ul>
-              <li>Name: <%= member.name %> <%= member.surname %></li>
-              <li>Slug: <%= member.slug %></li>
-              <li>Nickname: <%= member.nickname %></li>
+              <li>Name: <%= member.name %>
+                  <%= member.surname %>
+              </li>
+              <li>Slug: <%= member.slug %>
+              </li>
+              <li>Nickname: <%= member.nickname %>
+              </li>
             </ul>
             <p>My socials:</p>
             <ul>
-              <li>Github: <%= member.gitHubHandle %></li>
-              <li>Website: <%= member.website %></li>
+              <li>Github: <a href="<%= " https://github.com/" + member.gitHubHandle %>" target="_blank">Visit Github</a>
+              </li>
+              <li>Website: <a href="<%= member.website %>" target="_blank">Visit Website</a></li>
             </ul>
             <p>Other:</p>
             <ul>
-              <li>Class: <%= squad.name %></li>
-              <li>Favorite colour: <%= member.colour?.hex %></li>
+              <li>Class: <%= squad.name %>
+              </li>
+              <li>
+                Colour:<span style="color:<%= member.colour?.hex %>">
+                  <% if(member.colour?.hex) { %>
+                    <%= member.colour?.hex %>
+                </span>
+                <% } else { %>
+                  <span style="color:orange">Geen kleur ingesteld
+                    <% } %>
+                  </span>
+              </li>
             </ul>
           </div>
-          <!-- <a href="<%= " https://github.com/" + member.gitHubHandle %>" target="_blank">Github</a>
+          <!-- 
           <a href="<%= " /?squad=" + squad.slug %> %>" class="close-button">Close Menu</a> -->
           <!-- Haalt de github handle van een member uit de API op. Mocht een member zijn of haar githubhandle niet hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
         </dialog>
