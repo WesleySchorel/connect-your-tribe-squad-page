@@ -12,6 +12,15 @@ body {
   background: #141414;
 }
 
+/* 
+███╗   ██╗ █████╗ ██╗   ██╗
+████╗  ██║██╔══██╗██║   ██║
+██╔██╗ ██║███████║██║   ██║
+██║╚██╗██║██╔══██║╚██╗ ██╔╝
+██║ ╚████║██║  ██║ ╚████╔╝ 
+╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  
+*/
+
 nav {
   background: #007acc;
   color: #fff;
@@ -47,6 +56,15 @@ nav ul {
 nav ul li {
   margin-left: 20px;
 }
+
+/* 
+██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗ 
+██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝
+██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗
+██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝ 
+*/                                        
 
 header {
   background-color: #000000;
@@ -96,6 +114,15 @@ header li {
   font-size: 1rem;
   padding: 1rem;
 }
+
+/* 
+███╗   ███╗ █████╗ ██╗███╗   ██╗
+████╗ ████║██╔══██╗██║████╗  ██║
+██╔████╔██║███████║██║██╔██╗ ██║
+██║╚██╔╝██║██╔══██║██║██║╚██╗██║
+██║ ╚═╝ ██║██║  ██║██║██║ ╚████║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝
+*/
 
 main .squad-title {
   color: white;
@@ -163,9 +190,101 @@ article {
   margin-bottom: 1rem;
 }
 
+/* 
+██████╗ ██╗ █████╗ ██╗      ██████╗  ██████╗ 
+██╔══██╗██║██╔══██╗██║     ██╔═══██╗██╔════╝ 
+██║  ██║██║███████║██║     ██║   ██║██║  ███╗
+██║  ██║██║██╔══██║██║     ██║   ██║██║   ██║
+██████╔╝██║██║  ██║███████╗╚██████╔╝╚██████╔╝
+╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝  
+*/
+                                             
+dialog {
+  padding: 1rem;
+  margin: auto;
+  min-height: 400px;
+  min-width: 300px;
+  height: 450px;
+  width: 350px;
+  background-color: #282828;
+  border-radius: 5px;
+  border-color: #007acc;
+}
+
+dialog::backdrop {
+  background: #0000003a;
+  backdrop-filter: blur(5px);
+}
+
+dialog h2 { 
+  font-size: 1.2rem;
+  margin-top: 5px;
+  color: white;
+}
+
+dialog p { 
+  margin-top: 0;
+  font-weight: 600;
+  color: #ffff;
+  font-size: 1rem;
+}
+
+dialog a {
+  margin-top: 5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+dialog .id-card {
+  position: relative;
+  background-color: #141414;
+  height: 75px;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+dialog .dialog-card {
+  position: relative;
+  background-color: #141414; 
+  height: 320px;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+dialog ul {
+ padding-left: 1rem;
+ margin-bottom: 0.8rem;
+}
+
+dialog li {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* 
+███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗ 
+██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗
+█████╗  ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝
+██╔══╝  ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗
+██║     ╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║
+╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝
+*/
+
 .top {
   display: none;
 }
+
+/* 
+███╗   ███╗███████╗██████╗ ██╗ █████╗      ██████╗ ██╗   ██╗███████╗██████╗ ██╗   ██╗███████╗
+████╗ ████║██╔════╝██╔══██╗██║██╔══██╗    ██╔═══██╗██║   ██║██╔════╝██╔══██╗╚██╗ ██╔╝██╔════╝
+██╔████╔██║█████╗  ██║  ██║██║███████║    ██║   ██║██║   ██║█████╗  ██████╔╝ ╚████╔╝ ███████╗
+██║╚██╔╝██║██╔══╝  ██║  ██║██║██╔══██║    ██║▄▄ ██║██║   ██║██╔══╝  ██╔══██╗  ╚██╔╝  ╚════██║
+██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║    ╚██████╔╝╚██████╔╝███████╗██║  ██║   ██║   ███████║
+╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝     ╚══▀▀═╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝
+*/
 
 @media (min-width: 769px) {
   header img {
@@ -231,41 +350,3 @@ article {
   }
 }
 
-
-
-
-dialog {
-  padding: 1rem;
-  margin: auto;
-  width: 100%;
-  height: 50%;
-  background-color: #282828;
-  border-radius: 5px;
-  border-color: #007acc;
-}
-
-dialog::backdrop {
-  background: #0000003a;
-  backdrop-filter: blur(5px);
-}
-
-dialog h2 { 
-  font-size: 1.2rem;
-  margin-top: 5px;
-  color: white;
-}
-
-dialog p { 
-  margin-top: 0;
-  font-weight: 600;
-  color: rgb(0, 168, 219);
-  letter-spacing: .2em;
-  font-size: 1rem;
-}
-
-dialog a {
-  margin-top: 5rem;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
