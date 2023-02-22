@@ -182,10 +182,6 @@ article p {
   margin-bottom: 5px;
 }
 
-.id-card-information span {
-  color: red;
-}
-
 article {
   position: relative;
   background-color: #282828;
@@ -267,6 +263,33 @@ dialog ul {
 dialog li {
   color: #fff;
   font-size: 1rem;
+}
+
+.dialogg-card {
+  position: relative;
+  background-color: #141414;
+  height: 75px;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.dialogg-card img { 
+  min-width: 75px;
+  max-width: 75px;
+  min-height: 75px;
+  max-height: 75px; 
+  width: 100%;
+  background-color: #ffffff;
+  object-fit: cover;
+  }
+
+.dialogg-card-information {
+  width: 65%;
+  padding-left: 12px;
+  padding-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .close-dialog {
@@ -360,6 +383,11 @@ dialog li {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .id-card:hover {
+    background-color: #494949;
+    cursor: pointer;
   }
 }
 
