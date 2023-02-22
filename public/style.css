@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body {
+body { 
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -165,6 +165,8 @@ article p {
 
 .id-card img { 
   min-width: 75px;
+  max-width: 75px;
+  min-height: 75px;
   max-height: 75px; 
   width: 100%;
   background-color: #ffffff;
