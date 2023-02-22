@@ -14,8 +14,31 @@ allTriggers.forEach((trigger) => {
         close_buttons.forEach((close) => {
             close.addEventListener("click", () => {
                 card.close()
-            }); 
+            });
         })
 
     })
 })
+
+const searchbar = document.querySelector('.searchbar')
+const error = document.querySelector('.error-searchbar')
+
+searchbar.addEventListener('input', searching)
+
+function searching() {
+    let input = this.value
+    input = input.toLowerCase();
+
+    let x = document.getElementsByClassName('id-card-trigger');
+
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = 'none';
+            error.classList.remove('error-searchbar')
+        }
+        else {
+            x[i].style.display = 'block';
+            error.classList.add('error-searchbar')
+        }
+    }
+}
