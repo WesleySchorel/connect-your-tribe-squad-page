@@ -1,9 +1,7 @@
+// selecteren van elementen/classes
 const allTriggers = document.querySelectorAll('.id-card-trigger')
 
-console.log(allTriggers);
-
 allTriggers.forEach((trigger) => {
-    console.log(trigger)
     trigger.addEventListener('click', () => {
         const dataId = trigger.dataset.id
         const card = document.getElementById(dataId)
@@ -29,16 +27,17 @@ function searching() {
     let input = this.value
     input = input.toLowerCase();
 
-    let x = document.getElementsByClassName('id-card-trigger');
+    let x = document.querySelectorAll('.id-card-trigger');
+
 
     for (i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        if (!x[i].childNodes[1].childNodes[3].childNodes[1].innerText.toLowerCase().includes(input)) {
             x[i].style.display = 'none';
-            error.classList.remove('error-searchbar')
+            // error.classList.remove('error-searchbar')
         }
         else {
             x[i].style.display = 'block';
-            error.classList.add('error-searchbar')
+            // error.classList.add('error-searchbar')
         }
     }
 }
