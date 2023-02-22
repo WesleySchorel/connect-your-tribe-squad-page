@@ -208,7 +208,7 @@ dialog {
   width: 350px;
   background-color: #282828;
   border-radius: 5px;
-  border-color: #007acc;
+  border-color: #707070;
 }
 
 dialog::backdrop {
@@ -262,6 +262,14 @@ dialog ul {
 dialog li {
   color: #fff;
   font-size: 1rem;
+}
+
+.close-dialog {
+  position: absolute;
+  top: -4.4rem;
+  right: 10px;
+  font-size: 18px;
+  color: red;
 }
 
 /* 
