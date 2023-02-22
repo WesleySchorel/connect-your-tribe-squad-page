@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body { 
@@ -216,7 +217,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background: #0000003a;
+  background: #0000005b;
   backdrop-filter: blur(5px);
 }
 
