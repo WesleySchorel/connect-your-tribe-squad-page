@@ -1,4 +1,5 @@
 <%- include('./partials/head') %>
+<!-- Verbind de head met de index.ejs -->
 
   <header>
     <div class="header-info-1">
@@ -23,9 +24,9 @@
     <div class="squad-title">
       <h2>
         Overzicht: <%= squad.name %>
-        <form>
-          <input class="searchbar" type="search" placeholder="Search.." name="search">
-        </form>
+          <form>
+            <input class="searchbar" type="search" placeholder="Search.." name="search">
+          </form>
       </h2>
     </div>
     <!-- <span style="color:orange" class="error-searchbar">Niemand heet zo</span> -->
@@ -60,9 +61,9 @@
         </article>
 
 
-          
 
-          
+
+
 
         <!-- Dialog waarin alle gegevens van een bepaalde member worden weergegeven. -->
         <dialog class="card" id="<%= member.id %>">
@@ -83,11 +84,11 @@
             </div>
             <div class="dialogg-card-information float-left">
               <h2>
-                <%= member.name %><button class="close" value="cancel"><svg
-                  xmlns="http://www.w3.org/2000/svg" fill="#707070" width="24" height="24" viewBox="0 0 24 24">
-                  <path
-                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.5 16.084l-1.403 1.416-4.09-4.096-4.102 4.096-1.405-1.405 4.093-4.092-4.093-4.098 1.405-1.405 4.088 4.089 4.091-4.089 1.416 1.403-4.092 4.087 4.092 4.094z" />
-                </svg></button>
+                <%= member.name %><button class="close" value="cancel"><svg xmlns="http://www.w3.org/2000/svg"
+                      fill="#707070" width="24" height="24" viewBox="0 0 24 24">
+                      <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.5 16.084l-1.403 1.416-4.09-4.096-4.102 4.096-1.405-1.405 4.093-4.092-4.093-4.098 1.405-1.405 4.088 4.089 4.091-4.089 1.416 1.403-4.092 4.087 4.092 4.094z" />
+                    </svg></button>
               </h2>
               <p>
                 <%= member.role %>
@@ -108,6 +109,7 @@
             </ul>
             <p>My socials:</p>
             <ul>
+              <!-- Plakt de " https://github.com/" en gitHubHandle van een member aan elkaar waardoor een werkende link ontstaat. -->
               <li>Github: <a href="<%= " https://github.com/" + member.gitHubHandle %>" target="_blank">Visit Github</a>
               </li>
               <li>Website: <a href="<%= member.website %>" target="_blank">Visit Website</a></li>
@@ -116,20 +118,20 @@
             <ul>
               <li>Class: <%= squad.name %>
               </li>
+               <!-- Haalt de hex colour van een member uit de API op. Mocht een member zijn of haar hex colour niet hebben ingevuld wordt deze vervangen met de tekst: No colour selected. -->
               <li>
                 Colour:<span style="color:<%= member.colour?.hex %>">
                   <% if(member.colour?.hex) { %>
                     <%= member.colour?.hex %>
                 </span>
                 <% } else { %>
-                  <span style="color:orange">No colour selected
+                  <span style="color:orange">No colour selected.
                     <% } %>
                   </span>
               </li>
             </ul>
           </div>
 
-          <!-- Haalt de github handle van een member uit de API op. Mocht een member zijn of haar githubhandle niet hebben ingevuld wordt deze vervangen met de tekst: Niet Ingesteld. -->
         </dialog>
         <% }) %>
 
@@ -138,4 +140,5 @@
 
   </main>
 
+<!-- Verbind de foot met de index.ejs -->
   <%- include('./partials/foot') %>

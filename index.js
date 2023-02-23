@@ -1,7 +1,7 @@
 // importeert de Express module uit de "express" map.
 import express from 'express'
 
-// Variabele met de url van de json data
+// Variabele met de url van de json data oftewel, hij haalt de API gegevens op uit de bovenste liggende laag: de root.
 const url = 'https://whois.fdnd.nl/api/v1/squad/'
 
 // Maak een nieuwe express app
@@ -24,10 +24,6 @@ app.get('/', (request, response) => {
     response.render('index', data)
   })
 })
-
-// app.get('/members', (request, response) => {
-//   response.send('Joepie!!')
-// })
 
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)

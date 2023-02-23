@@ -1,4 +1,16 @@
-:focus { outline: none; }
+:focus {
+  outline: none;
+}
+
+:root {
+  --c-white: #fff;
+  --c-blue: #007acc;
+
+  --c-nav: var(--c-blue);
+  --c-background: #141414;
+  --c-id-card: #282828;
+  --c-id-card-hover: #494949;
+}
 
 * {
   box-sizing: border-box;
@@ -7,12 +19,12 @@
   scroll-behavior: smooth;
 }
 
-body { 
+body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background: #141414;
+  background: var(--c-background);
 }
 
 /* 
@@ -25,8 +37,8 @@ body {
 */
 
 nav {
-  background: #007acc;
-  color: #fff;
+  background: var(--c-nav);
+  color: var(--c-white);
   height: 60px;
   margin: 0;
   position: sticky;
@@ -35,7 +47,7 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: var(--c-white);
   text-decoration: none;
   font-size: 18px;
 }
@@ -67,11 +79,11 @@ nav ul li {
 ██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗
 ██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║
 ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝ 
-*/                                        
+*/
 
 header {
   background-color: #000000;
-  color: #fff;
+  color: var(--c-white);
   background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url("https://www.hva.nl/site/binaries/content/gallery/shared/opleidingen/fdmci/landscape-images/fdnd/open-dag-fdnd.jpg/open-dag-fdnd.jpg/hvacontentservice%3AsixteenByNineLarge");
   height: 50%;
   background-position: center;
@@ -111,7 +123,7 @@ header ul {
 }
 
 header li {
-  color: #fff;
+  color: var(--c-white);
   margin-top: -30px;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -133,18 +145,18 @@ main .squad-title {
   margin-bottom: 1rem;
 }
 
-main section{
+main section {
   margin-top: -1rem;
   padding: 1rem;
 }
 
-main h2 { 
+main h2 {
   font-size: 1.4rem;
   color: white;
 }
 
 main form {
-  background-color: #fff;
+  background-color: var(--c-white);
   width: 100%;
   height: 44px;
   border-radius: 5px;
@@ -157,7 +169,7 @@ main form {
 main input {
   all: unset;
   font: 16px system-ui;
-  color: #fff;
+  color: var(--c-white);
   height: 100%;
   width: 100%;
   padding: 6px 10px;
@@ -171,7 +183,7 @@ main input {
   display: none;
 }
 
-article p { 
+article p {
   margin-top: 0;
   font-weight: 600;
   color: rgb(0, 168, 219);
@@ -186,21 +198,21 @@ article p {
 
 .id-card {
   position: relative;
-  background-color: #282828;
+  background-color: var(--c-id-card);
   height: 75px;
   max-width: 100%;
   border-radius: 5px;
 }
 
-.id-card img { 
+.id-card img {
   min-width: 75px;
   max-width: 75px;
   min-height: 75px;
-  max-height: 75px; 
+  max-height: 75px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--c-white);
   object-fit: cover;
-  }
+}
 
 .id-card-information {
   width: 65%;
@@ -212,7 +224,7 @@ article p {
 
 article {
   position: relative;
-  background-color: #282828;
+  background-color: var(--c-id-card);
   height: 75px;
   max-width: 100%;
   border-radius: 5px;
@@ -227,7 +239,7 @@ article {
 ██████╔╝██║██║  ██║███████╗╚██████╔╝╚██████╔╝
 ╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝  
 */
-                                             
+
 dialog {
   padding: 1rem;
   margin: auto;
@@ -235,7 +247,7 @@ dialog {
   min-width: 300px;
   height: 450px;
   width: 350px;
-  background-color: #282828;
+  background-color: var(--c-id-card);
   border-radius: 5px;
   border-color: #707070;
 }
@@ -245,16 +257,16 @@ dialog::backdrop {
   backdrop-filter: blur(5px);
 }
 
-dialog h2 { 
+dialog h2 {
   font-size: 1.2rem;
   margin-top: 5px;
   color: white;
 }
 
-dialog p { 
+dialog p {
   margin-top: 0;
   font-weight: 600;
-  color: #ffff;
+  color: var(--c-white);
   font-size: 1rem;
 }
 
@@ -276,7 +288,7 @@ dialog .id-card {
 
 dialog .dialog-card {
   position: relative;
-  background-color: #141414; 
+  background-color: #141414;
   height: 320px;
   max-width: 100%;
   border-radius: 5px;
@@ -284,12 +296,12 @@ dialog .dialog-card {
 }
 
 dialog ul {
- padding-left: 1rem;
- margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 dialog li {
-  color: #fff;
+  color: var(--c-white);
   font-size: 1rem;
 }
 
@@ -302,15 +314,15 @@ dialog li {
   margin-bottom: 1rem;
 }
 
-.dialogg-card img { 
+.dialogg-card img {
   min-width: 75px;
   max-width: 75px;
   min-height: 75px;
-  max-height: 75px; 
+  max-height: 75px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: var(--c-white);
   object-fit: cover;
-  }
+}
 
 .dialogg-card-information {
   width: 65%;
@@ -334,18 +346,21 @@ button {
   right: 8px;
   border: none;
   background-color: #141414;
+  cursor: pointer;
 }
 
 
 dialog[open] {
   -webkit-animation: show 1s ease normal;
 }
-@keyframes show{
+
+@keyframes show {
   from {
-      transform: translateY(-110%);
+    transform: translateY(-110%);
   }
+
   to {
-      transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
@@ -383,27 +398,27 @@ dialog[open] {
     padding: 1rem;
     color: white;
   }
-  
+
   header h2 {
     color: #868686;
     margin-top: -30px;
     font-size: 2rem;
     padding: 1rem;
   }
-  
+
   header p {
     font-size: 2rem;
     padding: 1rem;
   }
-  
+
   header ul {
     display: flex;
     justify-content: flex-start;
     list-style-type: none;
   }
-  
+
   header li {
-    color: #fff;
+    color: var(--c-white);
     margin-top: -30px;
     font-size: 1rem;
     padding: 1rem;
@@ -411,14 +426,18 @@ dialog[open] {
 
   .header-info-1 {
     margin: auto;
-    width: 1040px; 
+    width: 1040px;
     padding: 50px;
   }
-  
+
   main {
     margin: auto;
-    width: 1040px; 
+    width: 1040px;
     padding: 50px;
+  }
+
+  main .squad-title h2  {
+    font-size: 2rem;
   }
 
   main form {
@@ -426,13 +445,13 @@ dialog[open] {
     float: right;
   }
 
-  .top{
+  .top {
     width: 70px;
     height: 70px;
     background: #444444;
     border-radius: 50%;
     position: fixed;
-    bottom:20px;
+    bottom: 20px;
     right: 20px;
     display: flex;
     justify-content: center;
@@ -440,8 +459,7 @@ dialog[open] {
   }
 
   .id-card:hover {
-    background-color: #494949;
+    background-color: var(--c-id-card-hover);
     cursor: pointer;
   }
 }
-
