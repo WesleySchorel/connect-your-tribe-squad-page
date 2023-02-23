@@ -30,7 +30,7 @@ De HTML structuur is opgemaakt met EJS. EJS is een simpele templatingtaal waarme
 CSS is te vinden in ``./public`` hierin heb ik de website een styling gegeven. De kleuren worden bijvoorbeeld opgehaald met custom propperties.
 ```css
 :root {
-    --c-navt: #007acc;
+    --c-nav: #007acc;
     --c-background: #141414;
     --c-id-card: #282828;
     --c-id-card-hover: #494949;
