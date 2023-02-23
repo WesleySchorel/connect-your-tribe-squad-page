@@ -4,7 +4,6 @@
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
