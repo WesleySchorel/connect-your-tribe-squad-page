@@ -1,9 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Dynamische Squadpage
-![ReadMe Overview Photo](https://user-images.githubusercontent.com/112857487/220894008-0c2f80cf-5706-43a6-8c2c-8a4028846fb8.png)
-
-
 ## 📚 Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
@@ -15,6 +12,8 @@
 
 ## Beschrijving
 De squadpage bestaat uit een overzicht van alle studenten en docenten van de opleiding Frontend Design & Development van het cohort 2022. Op deze pagina kunt u de gewenste squad selecteren. Binnen een squad kunt u navigeren naar een student of docent door via de zoekfunctie een naam in te vullen of door de lijst te browsen. Als u informatie van een student of docent wilt kunt u klikken op een profiel waarmee een lijst met gegevens in beeld verschijnt.
+
+![ReadMe Overview Photo](https://user-images.githubusercontent.com/112857487/220894008-0c2f80cf-5706-43a6-8c2c-8a4028846fb8.png)
 
 Link: https://gold-silly-binturong.cyclic.app/
 
