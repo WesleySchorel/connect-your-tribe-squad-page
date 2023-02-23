@@ -1,5 +1,3 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # Dynamische Squadpage
 ## 📚 Inhoudsopgave
 
@@ -98,7 +96,7 @@ Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Voor dit proje
 Open de terminal in Visual Studio Code en installeer Node doormiddel van het commando ``npm init``. Voer hierna ``npm install`` uit. Om de pagina te open start je een server op door middel van ``npm start``. Als de server weer gesloten moet worden kan je ``control + c / ^c`` gebruiken.
 
 ## Bronnen
-https://github.com/WesleySchorel/connect-your-tribe-squad-page/blob/main/docs/INSTRUCTIONS.md
+[docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 ## Licentie
 
