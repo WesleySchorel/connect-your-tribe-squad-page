@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Squadpage
+# Dynamische Squadpage
 ![ReadMe Overview Photo](https://user-images.githubusercontent.com/112857487/220894008-0c2f80cf-5706-43a6-8c2c-8a4028846fb8.png)
 
 
@@ -14,23 +14,92 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 De squadpage bestaat uit een overzicht van alle studenten en docenten van de opleiding Frontend Design & Development van het cohort 2022. Op deze pagina kunt u de gewenste squad selecteren. Binnen een squad kunt u navigeren naar een student of docent door via de zoekfunctie een naam in te vullen of door de lijst te browsen. Als u informatie van een student of docent wilt kunt u klikken op een profiel waarmee een lijst met gegevens in beeld verschijnt.
 
-📸 Screenshots:
-![ReadMe Overview Photo](https://user-images.githubusercontent.com/112857487/220894008-0c2f80cf-5706-43a6-8c2c-8a4028846fb8.png)
-
-🌐Link: https://gold-silly-binturong.cyclic.app/
+Link: https://gold-silly-binturong.cyclic.app/
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
+### HTML
+De HTML structuur is opgemaakt met EJS. EJS is een simpele templatingtaal waarmee HTML-opmaak kunt genereren met JavaScript.
+
+```js
+<%- include('./partials/head') %>
+
+<%- include('./partials/foot') %>
+````
+
+### CSS
+CSS is te vinden in ``./public`` hierin heb ik de website een styling gegeven. De kleuren worden bijvoorbeeld opgehaald met custom propperties.
+```css
+:root {
+    --c-navt: #007acc;
+    --c-background: #141414;
+    --c-id-card: #282828;
+    --c-id-card-hover: #494949;
+}
+```
+
+### Javascript
+Javascript is te vinden in ``./public`` hierin heb ik de Dialog en de Searchbar interactie werkend gemaakt.
+```js
+const allTriggers = document.querySelectorAll('.id-card-trigger')
+
+allTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+        const dataId = trigger.dataset.id
+        const card = document.getElementById(dataId)
+        // card.classList.add('active')
+        card.showModal();
+
+        const close_buttons = document.querySelectorAll(".close");
+        close_buttons.forEach((close) => {
+            close.addEventListener("click", () => {
+                card.close()
+            });
+        })
+
+    })
+})
+```
+
+### Node
+NodeJS zorgt voor de organisatie van Javascript op een server. NodeJs is gebruikt om gegevens uit de WHOis API op te halen.
+```js
+app.get('/', (request, response) => {
+  console.log(request.query.squad)
+
+  let slug = request.query.squad || 'squad-a-2022'
+  let orderBy = request.query.orderBy || 'name'
+  let squadUrl = url + slug + '?orderBy=' + orderBy + '&direction=ASC'
+
+  fetchJson(squadUrl).then((data) => {
+    response.render('index', data)
+  })
+})
+```
+
+### Express
+Express is het framework dat de routing op mijn website regelt.
+```js
+const app = express()
+
+// Stel in hoe we express gebruiken
+app.set('view engine', 'ejs')
+app.set('views', './views')
+app.use(express.static('public'))
+```
+
+
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
+Navigeer naar nodejs.org en installeer de Node ontwikkelomgeving. Voor dit project heb ik gebruik gemaakt van 18.14.0 LTS, download de benodigde bestanden en doorloop het installatieproces.
 
-## Gebruik
+Open de terminal in Visual Studio Code en installeer Node doormiddel van het commando ``npm init``. Voer hierna ``npm install`` uit. Om de pagina te open start je een server op door middel van ``npm start``. Als de server weer gesloten moet worden kan je ``control + c / ^c`` gebruiken.
 
 ## Bronnen
+https://github.com/WesleySchorel/connect-your-tribe-squad-page/blob/main/docs/INSTRUCTIONS.md
 
 ## Licentie
 
