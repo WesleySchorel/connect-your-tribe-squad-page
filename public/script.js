@@ -41,3 +41,16 @@ function searching() {
         }
     }
 }
+
+
+
+//Listen for a click on the button
+document.getElementById('darkmode').addEventListener('click', function() {
+
+    //Change the background color to black
+    document.body.style.backgroundColor = 'black';
+    
+    //Change the text color to white
+    document.body.style.color = 'white';
+    
+    });
