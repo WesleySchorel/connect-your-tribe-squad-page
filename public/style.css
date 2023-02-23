@@ -320,12 +320,33 @@ dialog li {
   margin-bottom: 5px;
 }
 
-.close-dialog {
+/* .close-dialog {
   position: absolute;
   top: -4.4rem;
   right: 10px;
   font-size: 18px;
   color: red;
+} */
+
+button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background-color: #141414;
+}
+
+
+dialog[open] {
+  -webkit-animation: show 1s ease normal;
+}
+@keyframes show{
+  from {
+      transform: translateY(-110%);
+  }
+  to {
+      transform: translateY(0%);
+  }
 }
 
 /* 
