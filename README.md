@@ -108,7 +108,7 @@ Bronnen die ik heb gelezen tijdens het ontwerpen van deze website:
 * Hierarchie - https://www.visia.media/visuele-hierarchie-in-webdesign/
 * Hierarchie - https://goeiezaak.com/blog/webdesign/visuele-hierarchie-in-webdesign-en-ui/ 
 
-[docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+Instructions: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 ## Licentie
 
