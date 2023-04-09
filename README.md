@@ -97,11 +97,16 @@ Open de terminal in Visual Studio Code en installeer Node doormiddel van het com
 ## Bronnen
 Bronnen die ik heb gelezen tijdens het ontwerpen van deze website:
 * Typografie - https://learn.bakermen.com/8-onmisbare-tips-voor-typografie-in-webdesign  
+* Typografie - https://www.stoerebinken.nl/top-typografie-voor-jouw-maatwerk-website/#korte-uitleg-over-top-typografie 
+
 * Kleur - https://uxdesign.cc/fundamentals-of-color-in-interface-design-ui-8127149f13e6
+* Kleur - https://webflow.com/blog/color-theory 
+
 * Consistentie - https://uxdesign.cc/design-principle-consistency-6b0cf7e7339f
 * Consistentie - https://www.frankwatching.com/archive/2018/12/04/de-kracht-van-witruimte/
-* Hierarchie - https://www.visia.media/visuele-hierarchie-in-webdesign/
 
+* Hierarchie - https://www.visia.media/visuele-hierarchie-in-webdesign/
+* Hierarchie - https://goeiezaak.com/blog/webdesign/visuele-hierarchie-in-webdesign-en-ui/ 
 
 [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
